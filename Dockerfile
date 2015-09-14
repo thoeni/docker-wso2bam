@@ -15,7 +15,7 @@ RUN     wget -P /opt --user-agent="testuser" --referer="http://connect.wso2.com/
 	yum update -y && \
 	yum install -y unzip && \
         unzip /opt/${WSO2_PRODUCT}-${WSO2_SOFT_VER}.zip -d /opt && \
-	mv /opt/${WSO2_PRODUCT}-${WSO2_SOFT_VER} /opt/wso2esb && \
+	mv /opt/${WSO2_PRODUCT}-${WSO2_SOFT_VER} /opt/${WSO2_PRODUCT} && \
         rm /opt/${WSO2_PRODUCT}-${WSO2_SOFT_VER}.zip
 
 EXPOSE 9443
